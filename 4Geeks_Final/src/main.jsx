@@ -31,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="subscriptions/:id" element={<Subscription />} />
           <Route path="cart" element={<ShoppingCart />} />
           <Route path="checkout" element={<Checkout />} />
+          {/* <Route path="about" element={} /> */}
         </Routes>
 
       <Footer />
