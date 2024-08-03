@@ -1,5 +1,5 @@
 import MyContext from "../Context/context";
-import { faPencil } from "@fortawesome/free-solid-svg-icons";
+
 
 const Profile = () => {
     return (

@@ -3,15 +3,45 @@
 @tailwind utilities;
 
 h1 {
-    @apply text-2xl;
-  }
-h2 {
-    @apply text-xl;
-  }
-h3 {
-    @apply text-lg;
+  font-family: "termina", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px
   }
 
+h2 {
+  font-family: "termina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+h3 {
+  font-family: "omnes-pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  }
+
+h4 {
+  font-family: "omnes-pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: "omnes-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px
+}
+
 button {
-    background-color: rgba(77, 133, 206, 0.418);
+    background-color: rgb(0, 0, 0);
+    font-size: 20px
+}
+
+hr {
+  height: 0.1px;
+  width: 100%;
+  border: 0;
+  background: #cdaa94a8;
 }
