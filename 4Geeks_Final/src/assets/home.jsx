@@ -26,7 +26,7 @@ export default function Home() {
                 autoPlay
                 loop
                 muted
-                className="absolute z-10 w-auto min-w-full max-w-none">
+                className="background-video z-0">
                 <source
                     src={videoSrc}
                     type="video/mp4">
