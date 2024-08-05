@@ -37,7 +37,7 @@ const Login = () => {
 
                 <p className="mt-10 text-center text-sm text-gray-500">
                 Not registered yet? 
-                <Button as={Link} to={`/subscribe`}className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up here.</Button>
+                <button as={Link} to={`/subscribe`}className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up here.</button>
                 </p>
             </div>
         </div>
