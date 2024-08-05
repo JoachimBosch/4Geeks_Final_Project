@@ -1,5 +1,6 @@
-import image1 from '../images/Wellbeing1.jpg';
-import image2 from '../images/OurClients.jpg';
+import image1 from '../images/Wellbeing1.jpg'
+import image2 from '../images/OurClients.jpg'
+import videoSrc from '../video/AdobeStock_471309002.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import Carousel from './carousel';
@@ -7,6 +8,7 @@ import Carousel from './carousel';
 
 
 export default function Home() {
+    console.log('Video source path:', videoSrc);
   return (
     <div>
 
@@ -14,7 +16,7 @@ export default function Home() {
         {/* Section 1 */}
 
 
-        <header className="relative flex items-end justify-end h-screen overflow-hidden">
+        <header className="relative flex items-end justify-end h-screen overflow-hidden bg-fixed">
             <div className="relative z-30 text-right mx-20 w-full max-w-[720px]">
                 <h1 className="my-2 [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)] text-black-500 leading-loose text-5xl md:text-6xl">Reset your life, one box at a time</h1>
                 <p className="text-black-500 [text-shadow:_3px_3px_3px_rgb(0_0_0_/_20%)] text-1xl md:text-3xl">Find your gateway to a more mindful, peaceful life through curated  experiences delivered to your doorstep.</p>
@@ -26,7 +28,7 @@ export default function Home() {
                 muted
                 className="absolute z-10 w-auto min-w-full max-w-none">
                 <source
-                    src="../video/AdobeStock_471309002.mp4"
+                    src={videoSrc}
                     type="video/mp4">
                 </source>
                 Your browser does not support the video tag.
@@ -140,7 +142,7 @@ export default function Home() {
                     How can I contact customer service?</p>
             </div>
             <div className="flex justify-center">
-                <button className="px-10 py-5 bg-black text-white shadow-[4px_4px_8px_rgba(0,0,0,0.2)]">Choose your experience</button>
+                <button className="px-10 py-5 bg-black text-white shadow-[4px_4px_8px_rgba(0,0,0,0.2)] text-xl md:text-1xl">Choose your experience</button>
             </div>
         </div>
     </div>

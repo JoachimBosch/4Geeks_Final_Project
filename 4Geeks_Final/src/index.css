@@ -36,13 +36,13 @@ p {
 }
 
 button {
-    background-color: rgb(0, 0, 0);
-    font-size: 22px
+  background-color: rgb(0, 0, 0);
+  font-size: 22px
 }
 
 hr {
-  height: 0.1px;
-  width: 100%;
-  border: 0;
-  background: #cdaa94a8;
+height: 0.1px;
+width: 100%;
+border: 0;
+background: #cdaa94a8;
 }
