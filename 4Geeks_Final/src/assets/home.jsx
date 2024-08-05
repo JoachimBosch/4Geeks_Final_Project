@@ -12,7 +12,7 @@ export default function Home() {
         {/* Section 1 */}
 
 
-        <header className="relative flex items-end justify-end h-screen overflow-hidden">
+        <header className="relative flex items-end justify-end h-screen overflow-hidden bg-fixed">
             <div className="relative z-30 text-right mx-20 w-full max-w-[600px]">
                 <h1 className="my-2 [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)] text-black-500 leading-normal">Reset your life, one box at a time</h1>
                 <p className="text-black-500 leading-relaxed [text-shadow:_3px_3px_3px_rgb(0_0_0_/_20%)]" style={{fontSize: "25px"}}>Find your gateway to a more mindful, peaceful life through curated  experiences delivered to your doorstep.</p>
@@ -22,7 +22,7 @@ export default function Home() {
                 autoPlay
                 loop
                 muted
-                className="absolute z-10 w-auto min-w-full max-w-none">
+                className="background-video z-0">
                 <source
                     src={videoSrc}
                     type="video/mp4">
@@ -35,7 +35,7 @@ export default function Home() {
         {/* Section 2 */}
 
 
-        <div className="bg-orange-50 h-screen flex items-center">
+        <div className="z-30 h-screen flex items-center">
             <div style={{backgroundColor: "#FAEAE0"}} className="w-[30rem] mx-auto leading-loose z-20 py-9 relative shadow-[6px_6px_12px_rgba(0,0,0,0.4)]">
                 <hr></hr>
                 <p className="px-9">We've crafted unique boxes to create</p>

@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="subscribe" element={<Subscribe />} />
           <Route path="login" element={<Login />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="profile/manage" element={<Manage />} />
+          <Route path="manage" element={<Manage />} />
           <Route path="marketplace" element={<Marketplace />} />
           <Route path="subscriptions/:id" element={<Subscription />} />
           <Route path="cart" element={<ShoppingCart />} />
