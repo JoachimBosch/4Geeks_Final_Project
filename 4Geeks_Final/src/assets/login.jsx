@@ -37,7 +37,10 @@ const Login = () => {
 
                 <p className="mt-10 text-center text-sm text-gray-500">
                 Not registered yet? 
-                <button as={Link} to={`/subscribe`}className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up here.</button>
+                &nbsp;
+                <Link to="/subscribe">
+                    <button className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 bg-inherit">Sign up here.</button>
+                </Link>
                 </p>
             </div>
         </div>

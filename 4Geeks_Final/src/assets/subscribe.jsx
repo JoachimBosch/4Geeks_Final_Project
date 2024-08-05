@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
 import MyContext from "../Context/context";
 
 const Subscribe = () => {
@@ -34,8 +33,12 @@ const Subscribe = () => {
                 </form>
 
                 <p className="mt-10 text-center text-sm text-gray-500">
-                Already have an account? 
-                <Button as={Link} to={`/login`}className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign in here.</Button>
+                Already have an account?
+                &nbsp;
+                <Link to="/login">
+                    <button className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 bg-inherit"> Sign in here.</button>
+                </Link>
+                
                 </p>
             </div>
         </div>

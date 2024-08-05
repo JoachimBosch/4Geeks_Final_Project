@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
+
 
 const navigation = [
   { name: 'Marketplace', href: './marketplace' },
@@ -47,15 +47,20 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button as={Link} to={`/subscribe`} className="text-sm font-semibold leading-6 text-gray-900">
-            Sign up 
-            </Button>
+            <Link to="/subscribe">
+              <button className="text-sm font-semibold leading-6 text-gray-900 bg-inherit">
+              Sign up 
+              </button>
+            </Link>
             &nbsp;
             or
             &nbsp;
-            <Button as={Link} to={`/login`} className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </Button>
+            <Link to="/login">
+              <button className="text-sm font-semibold leading-6 text-gray-900 bg-inherit">
+                Log in <span aria-hidden="true">&rarr;</span>
+              </button>
+            </Link>
+            
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
