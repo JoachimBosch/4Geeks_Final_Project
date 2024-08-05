@@ -35,7 +35,7 @@ const Profile = () => {
                                         Address information
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Edit
+                                        Manage
                                     </th>
                                 </tr>
                             </thead>
@@ -48,7 +48,7 @@ const Profile = () => {
                                         Street Name 101, 00000 City, Country
                                     </td>
                                     <td class="px-6 pr-0">
-                                        <button className="px-2 py-1 border rounded">
+                                        <button className="ml-2 px-2 py-1 border rounded">
                                             Edit
                                         </button>
                                         <button className="ml-2 px-2 py-1 border rounded">
@@ -56,8 +56,14 @@ const Profile = () => {
                                         </button>
                                     </td>
                                 </tr>
+
                             </tbody>
                         </table>
+                            <div className="my-3 mx-auto flex justify-center">
+                                    <button className="px-2 py-1 border rounded">
+                                        Add another address
+                                    </button>
+                            </div>
                     </div>
                 </div>
                 <div className="border border-2 mx-2 my-4 p-4">
@@ -100,9 +106,6 @@ const Profile = () => {
                                     <td class="px-6 pr-0">
                                         <button className="px-2 py-1 border rounded">
                                             Edit
-                                        </button>
-                                        <button className="ml-2 px-2 py-1 border rounded">
-                                            Delete
                                         </button>
                                     </td>
                                 </tr>
