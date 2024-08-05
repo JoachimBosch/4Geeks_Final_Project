@@ -9,13 +9,13 @@ const Profile = () => {
                     <h2>Personal information</h2>
                     <div className="mt-3">
                         <h3>Name:</h3>
-                        <p className="indent-8">Joachim</p>
+                        <p className="indent-8 profile-text">Joachim</p>
                         <h3>Last name:</h3>
-                        <p className="indent-8">Bosch</p>
+                        <p className="indent-8 profile-text">Bosch</p>
                         <h3>Email address:</h3>
-                        <p className="indent-8">bosch.joachim@outlook.com</p>
+                        <p className="indent-8 profile-text">bosch.joachim@outlook.com</p>
                         <h3>Phone number:</h3>
-                        <p className="indent-8">0626838554</p>
+                        <p className="indent-8 profile-text">0626838554</p>
                     </div>
                     <div className="flex justify-center">
                         <button className="mx-3 px-2 py-1 border rounded">Change password</button>

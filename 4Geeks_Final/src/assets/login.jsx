@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 import MyContext from "../Context/context";
 
 const Login = () => {
@@ -37,7 +38,7 @@ const Login = () => {
 
                 <p className="mt-10 text-center text-sm text-gray-500">
                 Not registered yet? 
-                <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up here.</a>
+                <Button as={Link} to={`/subscribe`}className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up here.</Button>
                 </p>
             </div>
         </div>
