@@ -79,8 +79,8 @@ export default function Home() {
         {/*Section 5 */}
 
 
-        <img src={image2} alt="Our-clients" className="h-view absolute z-0"></img>
-        <div className="z-10 relative py-10">
+        {/* <img src={image2} style={{width: "100%", height: "700px"}} alt="Our-clients" className="h-view z-0"></img> */}
+        <div className="z-10 relative py-10 clients-love">
             <h2 className="text-center [text-shadow:_3px_3px_5px_rgb(0_0_0_/_50%)]" style={{color: 'white'}}>Our Clients Love Us</h2>
             <div className="flex">
                 <div className="bg-white opacity-70 w-1/3 p-5 ms-5 my-10 rounded-sm">
