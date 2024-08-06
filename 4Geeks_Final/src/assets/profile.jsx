@@ -1,12 +1,13 @@
 import MyContext from "../Context/context";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
     return (
         <>
-            <div className="mt-20 flex flex-col">
-                <div className="mt-2 mb-4 ml-2">
+            <div className="md:mx-40 mt-20 flex flex-col">
+                <div className="mt-4 mb-6 ml-2">
                     <h2>Personal information</h2>
                 </div>
                 <div className="border border-2 mx-2 p-4">
@@ -21,12 +22,16 @@ const Profile = () => {
                         <h3>Phone number:</h3>
                         <p className="indent-8 pb-2 profile-text">0626838554</p>
                     </div>
-                    <div className="flex justify-center">
-                        <button className="mx-3 px-2 py-1 border rounded bg-inherit">Change password</button>
-                        <button className="mx-3 px-2 py-1 border rounded bg-inherit">Update profile information</button>
+                    <div className="mt-2 mb-6 flex justify-center">
+                        <Link to="">
+                            <button className="mx-3 px-2 py-1 border rounded bg-inherit">Change password</button>
+                        </Link>
+                        <Link to="">
+                            <button className="mx-3 px-2 py-1 border rounded bg-inherit">Update profile information</button>
+                        </Link>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 ml-2">
+                <div className="mt-10 mb-6 ml-2">
                     <h2>Address information</h2>
                 </div>
                 <div className="border border-2 mx-2 p-4">
@@ -54,25 +59,31 @@ const Profile = () => {
                                         Street Name 101, 00000 City, Country
                                     </td>
                                     <td class="px-6 pr-0">
-                                        <button className="px-2 py-1 bg-inherit">
-                                            <FontAwesomeIcon icon={faPencil} />
-                                        </button>
-                                        <button className="ml-2 px-2 py-1 bg-inherit">
-                                            <FontAwesomeIcon icon={faTrashCan} />
-                                        </button>
+                                        <Link to="">
+                                            <button className="px-2 py-1 bg-inherit">
+                                                <FontAwesomeIcon icon={faPencil} />
+                                            </button>
+                                        </Link>
+                                        <Link to="">
+                                            <button className="ml-2 px-2 py-1 bg-inherit">
+                                                <FontAwesomeIcon icon={faTrashCan} />
+                                            </button>
+                                        </Link>
                                     </td>
                                 </tr>
 
                             </tbody>
                         </table>
-                            <div className="my-3 mx-auto flex justify-center">
+                            <div className="my-6 mx-auto flex justify-center">
+                                <Link to="">
                                     <button className="px-2 py-1 border rounded bg-inherit">
                                         Add another address
                                     </button>
+                                </Link> 
                             </div>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 ml-2">
+                <div className="mt-10 mb-6 ml-2">
                     <h2>Active subscriptions</h2>
                 </div>
                 <div className="border border-2 mx-2 my-4 p-4">
@@ -112,17 +123,21 @@ const Profile = () => {
                                         August 27, 2024
                                     </td>
                                     <td class="px-6 pr-0">
-                                        <button className="px-2 py-1 bg-inherit	">
-                                            <FontAwesomeIcon icon={faPencil} />
-                                        </button>
+                                        <Link to="">
+                                            <button className="px-2 py-1 bg-inherit">
+                                                <FontAwesomeIcon icon={faPencil} />
+                                            </button>
+                                        </Link>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                            <div className="my-3 mx-auto flex justify-center">
-                                    <button className="px-2 py-1 border rounded bg-inherit">
+                            <div className="my-6 mx-auto flex justify-center">
+                                    <Link to="/manage">
+                                        <button className="px-2 py-1 border rounded bg-inherit">
                                         Manage subscriptions
-                                    </button>
+                                        </button>
+                                    </Link>
                             </div>
                     </div>
                 </div>
