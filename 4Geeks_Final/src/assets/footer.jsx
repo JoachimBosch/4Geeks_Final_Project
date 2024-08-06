@@ -3,7 +3,7 @@ import MyContext from "../Context/context";
 const Footer = () => {
     return (
     <>
-        <div className="mt-20">
+        <div className="bg-black opacity-50 mt-20">
             This is the footer
         </div>
     </>

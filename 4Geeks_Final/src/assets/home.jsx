@@ -1,5 +1,6 @@
 import image1 from '../images/Wellbeing1.jpg'
-import image2 from '../images/OurClients.jpg'
+import image2 from '../images/ChoosingProducts.jpg';
+import image3 from '../images/OurClients.jpg';
 import videoSrc from '../video/AdobeStock_471309002.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -16,17 +17,17 @@ export default function Home() {
         {/* Section 1 */}
 
 
-        <header className="relative flex items-end justify-end h-screen overflow-hidden bg-fixed">
+        <header className="relative flex items-end justify-end h-screen overflow-hidden">
             <div className="relative z-30 text-right mx-20 w-full max-w-[720px]">
-                <h1 className="my-2 [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)] text-black-500 leading-loose text-5xl md:text-6xl">Reset your life, one box at a time</h1>
+                <h1 className="md:my-2 [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)] text-black-500 leading-tight text-5xl md:text-6xl">Reset your life, one box at a time</h1>
                 <p className="text-black-500 [text-shadow:_3px_3px_3px_rgb(0_0_0_/_20%)] text-1xl md:text-3xl">Find your gateway to a more mindful, peaceful life through curated  experiences delivered to your doorstep.</p>
-                <button className="mt-10 mb-20 px-10 py-5 bg-black text-white shadow-[6px_6px_12px_rgba(0,0,0,0.4)] text-xl md:text-1xl">Choose your experience</button>
+                <button className="mt-10 mb-16 px-10 py-5 bg-black text-white shadow-[6px_6px_12px_rgba(0,0,0,0.4)] text-xl md:text-1xl">Choose your experience</button>
             </div>
             <video
                 autoPlay
                 loop
                 muted
-                className="background-video z-0">
+                className="absolute -z-30 w-auto min-w-full min-h-full max-w-none background-video">
                 <source
                     src={videoSrc}
                     type="video/mp4">
@@ -40,19 +41,19 @@ export default function Home() {
 
 
         <div className="bg-orange-50 h-screen flex items-center">
-            <div style={{backgroundColor: "#FAEAE0"}} className="w-[30rem] mx-auto md:ms-20 leading-loose z-20 py-9 relative shadow-[6px_6px_12px_rgba(0,0,0,0.4)]">
+            <div style={{backgroundColor: "#FAEAE0"}} className="box-border w-[30rem] mx-auto md:w-[38rem] md:ms-[10%] leading-loose z-20 py-9 relative shadow-[6px_6px_12px_rgba(0,0,0,0.4)] text-center">
                 <hr></hr>
-                <p className="px-9">We've crafted unique boxes to create</p>
+                <p className="px-9 md:text-2xl md:my-2">We've crafted unique boxes to create</p>
                 <hr></hr>
-                <p className="px-9"><strong> personalized experiences </strong> that nourish your</p>
+                <p className="px-9 md:text-2xl md:my-2"><strong> personalized experiences </strong> that nourish your</p>
                 <hr></hr>
-                <p className="px-9">soul and enhance your well-being.</p>
+                <p className="px-9 md:text-2xl md:my-2">soul and enhance your well-being.</p>
                 <hr></hr>
                 <p><br></br></p>
                 <hr></hr>
-                <p className="px-9">Each box is an invitation to <strong>create a ritual</strong></p>
+                <p className="px-9 md:text-2xl md:my-2">Each box is an invitation to <strong>create a ritual</strong></p>
                 <hr></hr>
-                <p className="px-9">that suits your lifestyle and needs.</p>
+                <p className="px-9 md:text-2xl md:my-2">that suits your lifestyle and needs.</p>
                 <hr></hr>
             </div>
             <img src={image1} 
@@ -72,17 +73,36 @@ export default function Home() {
         {/*Section 4 */}
 
 
-        <div className="bg-orange-50 h-screen flex items-center"></div>
+        <div className="bg-orange-50 py-24">
+            <h2 className="text-center">Our boxes</h2>
+            <div className="my-16 flex">
+                <img src={image2} alt="lady choosing products"></img>
+                <div className="grid gap-y-4 mx-5">
+                    <div className="border border-zinc-500 text-center content-center px-20">
+                        <h4>Personalized Experience</h4>
+                        <p>Each box is tailored to meet your unique needs and preferences.</p>
+                    </div>
+                    <div className="border border-zinc-500 text-center content-center">
+                        <h4>Quality and Sustainability</h4>
+                        <p>We prioritize high-quality, ethically sourced and eco-friendly products.</p>
+                    </div>
+                    <div className="border border-zinc-500 text-center content-center">
+                        <h4>Expert curation</h4>
+                        <p>Each item is carefully selected by a team of wellness experts.</p>
+                    </div>
+                </div>
+            </div>
+            <button className="mx-auto px-10 py-5 bg-black text-white shadow-[4px_4px_8px_rgba(0,0,0,0.2)] text-xl md:text-1x flex content-center">More About Us</button>
+        </div>
 
 
 
         {/*Section 5 */}
 
 
-        {/* <img src={image2} style={{width: "100%", height: "700px"}} alt="Our-clients" className="h-view z-0"></img> */}
-        <div className="z-10 relative py-10 clients-love">
-            <h2 className="text-center [text-shadow:_3px_3px_5px_rgb(0_0_0_/_50%)]" style={{color: 'white'}}>Our Clients Love Us</h2>
-            <div className="flex">
+        <div className="z-10 relative py-24" style={{ backgroundImage: `url(${image3})`}}>
+            <h2 className="text-center [text-shadow:_3px_3px_5px_rgb(0_0_0_/_50%)] mb-10" style={{color: 'white'}}>Our Clients Love Us</h2>
+            <div className="md:flex">
                 <div className="bg-white opacity-70 w-1/3 p-5 ms-5 my-10 rounded-sm">
                     <p>"Absolutely life-changing! The Relax box has become my nightly ritual. The soothing scents and calming teas help me unwind like never before. I feel so much more at peace. Thank you, RE7!"</p>
                     <h4 className="text-right">Sophie M.</h4>
@@ -102,9 +122,9 @@ export default function Home() {
         {/*Section 6 */}
         
         
-        <div className="bg-orange-50 h-screen py-10">
-            <h2 className="text-center">Frequently Asked Questions</h2>
-            <div style={{backgroundColor: "#FAEAE0"}} className="w-[35rem] leading-loose py-9 relative shadow-[4px_4px_8px_rgba(0,0,0,0.2)] my-10 mx-auto">
+        <div className="h-screen py-24">
+            <h2 className="text-center mb-16">Frequently Asked Questions</h2>
+            <div style={{backgroundColor: "#FAEAE0"}} className="max-w-[70%] mx-auto my-10 leading-loose py-9 shadow-[4px_4px_8px_rgba(0,0,0,0.2)] ">
                 <p className="px-9">
                     <span className="me-3"><FontAwesomeIcon icon = {faPlus} /></span>
                      What's included in each box?</p>
