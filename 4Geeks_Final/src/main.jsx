@@ -15,6 +15,7 @@ import ShoppingCart from './assets/cart.jsx';
 import Checkout from './assets/checkout.jsx';
 import Home from './assets/home.jsx'
 import Details from './assets/details.jsx';
+import About from './assets/about.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -32,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="details" element={<Details />} />
           <Route path="cart" element={<ShoppingCart />} />
           <Route path="checkout" element={<Checkout />} />
-          {/* <Route path="about" element={} /> */}
+          <Route path="about" element={<About />} />
         </Routes>
 
       <Footer />
