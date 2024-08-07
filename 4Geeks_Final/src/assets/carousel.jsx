@@ -46,7 +46,9 @@ export default function Carousel() {
                         <h3 className="text-6xl text-white [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)]">Surrender after a long day</h3>
                         <div className="flex flex-row items-center gap-4 my-20">
                             <button type="button" className="px-20 py-2 text-white bg-stone-700 hover:bg-stone-900 shadow-[6px_6px_12px_rgba(0,0,0,0.4)] text-xl md:text-2xl" style={{fontWeight: "500"}}>Buy now</button>
-                            <button type="button" className="border border-stone-800 px-16 py-2 text-stone-900 hover:bg-stone-100 shadow-[4px_4px_8px_rgba(0,0,0,0.2)] text-xl md:text-2xl">See details</button>
+                            <Link to="details">
+                                <button type="button" className="border border-stone-800 px-16 py-2 text-stone-900 hover:bg-stone-100 shadow-[4px_4px_8px_rgba(0,0,0,0.2)] text-xl md:text-2xl">See details</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

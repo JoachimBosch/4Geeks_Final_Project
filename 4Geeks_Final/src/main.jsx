@@ -11,10 +11,10 @@ import Marketplace from './assets/marketplace.jsx';
 import Profile from './assets/profile.jsx';
 import Subscribe from './assets/subscribe.jsx';
 import Manage from './assets/manage.jsx';
-import Subscription from './assets/subscription.jsx';
 import ShoppingCart from './assets/cart.jsx';
 import Checkout from './assets/checkout.jsx';
 import Home from './assets/home.jsx'
+import Details from './assets/details.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="profile" element={<Profile />} />
           <Route path="manage" element={<Manage />} />
           <Route path="marketplace" element={<Marketplace />} />
-          <Route path="subscriptions/:id" element={<Subscription />} />
+          <Route path="details" element={<Details />} />
           <Route path="cart" element={<ShoppingCart />} />
           <Route path="checkout" element={<Checkout />} />
           {/* <Route path="about" element={} /> */}
