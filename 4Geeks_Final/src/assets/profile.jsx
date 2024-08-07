@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const Profile = () => {
     return (
         <>
-            <div className="md:mx-40 mt-20 flex flex-col">
+            <div className="md:mx-60 mt-20 flex flex-col">
                 <div className="mt-4 mb-6 ml-2">
-                    <h2>Personal information</h2>
+                    <h2 className="indent-4">Personal information</h2>
                 </div>
-                <div className="border border-2 mx-2 p-4">
+                <div className="profile mx-2 p-4">
                     
                     <div className="mt-3">
                         <h3>Name:</h3>
@@ -24,26 +24,29 @@ const Profile = () => {
                     </div>
                     <div className="mt-2 mb-6 flex justify-center">
                         <Link to="">
-                            <button className="mx-3 px-2 py-1 border rounded bg-inherit">Change password</button>
+                            <button className="profile-button mx-3 px-2 py-1 border rounded bg-inherit" >Change password</button>
                         </Link>
                         <Link to="">
-                            <button className="mx-3 px-2 py-1 border rounded bg-inherit">Update profile information</button>
+                            <button className="profile-button mx-3 px-2 py-1 border rounded bg-inherit" >Update profile information</button>
                         </Link>
                     </div>
                 </div>
                 <div className="mt-10 mb-6 ml-2">
-                    <h2>Address information</h2>
+                    <h2 className="indent-4">Address information</h2>
                 </div>
-                <div className="border border-2 mx-2 p-4">
+                <div className="profile mx-2 p-4">
                     <div class="relative overflow-x-auto mt-3">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase" style={{backgroundColor: "#f7f1ed"}}>
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
                                         Label
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Address information
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Type
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Manage
@@ -57,6 +60,9 @@ const Profile = () => {
                                     </td>
                                     <td class="px-6 py-4">
                                         Street Name 101, 00000 City, Country
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Billing and shipping
                                     </td>
                                     <td class="px-6 pr-0">
                                         <Link to="">
@@ -76,7 +82,7 @@ const Profile = () => {
                         </table>
                             <div className="my-6 mx-auto flex justify-center">
                                 <Link to="">
-                                    <button className="px-2 py-1 border rounded bg-inherit">
+                                    <button className="profile-button px-2 py-1 border rounded bg-inherit">
                                         Add another address
                                     </button>
                                 </Link> 
@@ -84,12 +90,12 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="mt-10 mb-6 ml-2">
-                    <h2>Active subscriptions</h2>
+                    <h2 className="indent-4">Active subscriptions</h2>
                 </div>
-                <div className="border border-2 mx-2 my-4 p-4">
+                <div className="profile mx-2 my-4 p-4">
                     <div class="relative overflow-x-auto mt-3">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase" style={{backgroundColor: "#f7f1ed"}}>
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
                                         Label
@@ -102,9 +108,6 @@ const Profile = () => {
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Next billing date
-                                    </th>
-                                    <th scope="col" class="pl-6 py-3">
-                                        Edit
                                     </th>
                                 </tr>
                             </thead>
@@ -122,19 +125,12 @@ const Profile = () => {
                                     <td class="px-6 py-4">
                                         August 27, 2024
                                     </td>
-                                    <td class="px-6 pr-0">
-                                        <Link to="">
-                                            <button className="px-2 py-1 bg-inherit">
-                                                <FontAwesomeIcon icon={faPencil} />
-                                            </button>
-                                        </Link>
-                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                             <div className="my-6 mx-auto flex justify-center">
                                     <Link to="/manage">
-                                        <button className="px-2 py-1 border rounded bg-inherit">
+                                        <button className="profile-button px-2 py-1 border rounded bg-inherit">
                                         Manage subscriptions
                                         </button>
                                     </Link>
