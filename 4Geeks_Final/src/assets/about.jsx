@@ -58,15 +58,7 @@ your mind, body, and spirit.
 
             <div className="bg-cover h-screen min-w-[100%]" style={{ backgroundImage: `url(${image2})`}}>
                 <h4>What we offer</h4>
-                <p>Every month, we deliver a themed box filled with high-quality, 
-carefully curated items that align with our core values of renewal, 
-relaxation, and revitalization. Each box is designed to help you:
-- **Revive** your energy with invigorating and refreshing products.
-- **Relax** and unwind with soothing and calming essentials.
-- **Recharge** your mind and body with nourishing and empowering items.
-- **Refocus** on your personal goals with tools and inspiration.
-- **Reconnect** with yourself and loved ones through meaningful
- activities and products.</p>
+                <p>Every month, we deliver a themed box filled with h</p>
             </div>
         </div>
     )
