@@ -8,7 +8,7 @@ const Manage = () => {
         <>
         <div className="md:mx-60 mt-20 flex flex-col">
             <div className="mt-2 mb-4 ml-2">
-                    <h2>Subscription management</h2>
+                    <h2 className="indent-4">Subscription management</h2>
             </div>
             <div className="profile mx-2 p-4">
                 
