@@ -2,10 +2,7 @@ import json
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-app.config['SQLALCHEMY_DATABASE_URI'] + 'postgres://avnadmin:AVNS_LdwQ1SMHxwcgNdM1Ywp@finalproject-4geeks-finalproject-4geeks.l.aivencloud.com:22468/defaultdb?sslmode=require'
-""" app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False """
-
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -71,20 +68,6 @@ class Subscription(db.Model):
             "payment_method": self.payment_method,
         }
 
-class Order(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    subscription_id = db.Column(db.Integer, db.ForeignKey('subscription.id'))
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'))
-
-    def serialize(self):
-        return {
-            "id": self.id,
-            "user_id": self.user_id,
-            "subscription_id": self.subscription_id,
-            "product_id": self.product_id,
-        }
-
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False, nullable=False)
@@ -97,6 +80,20 @@ class Product(db.Model):
             "name": self.name,
             "description": self.description,
             "price": self.price,
+        }
+    
+class Order(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    subscription_id = db.Column(db.Integer, db.ForeignKey('subscription.id'))
+    product_id = db.Column(db.Integer, db.ForeignKey('product.id'))
+
+    def serialize(self):
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "subscription_id": self.subscription_id,
+            "product_id": self.product_id,
         }
 
 if __name__ == '__main__':
