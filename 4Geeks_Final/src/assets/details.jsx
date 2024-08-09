@@ -9,11 +9,11 @@ const Details = () => {
         
             <div className="bg-[#F2D2C6] py-20">
                 <div className="border-b border-t border-black flex">
-                    <div className="max-w-[50%]">
+                    <div className="max-w-[50%] lg:max-w-[40%] content-center">
                         <img src={relaxOut} className="mx-auto p-8"></img>
-                        <div className="grid grid-cols-2 gap-2 pb-5 mx-8">
-                            <img src={relaxOut} className="border border-black"></img>
-                            <img src={relaxOut} className=""></img>
+                        <div className="flex gap-1 pb-5 px-8">
+                            <img src={relaxOut} className="border border-black w-1/2"></img>
+                            <img src={relaxOut} className="w-1/2"></img>
                         </div>
                     </div>
                     <div className="border-l border-black p-8 content-center">
@@ -35,9 +35,9 @@ const Details = () => {
 
 
                 <div>
-                    <h3 className="text-6xl text-white [text-shadow:_5px_5px_8px_rgb(0_0_0_/_20%)] p-12">See products inside</h3>
+                    <h2 className="p-8">See products inside</h2>
                     <div className = "flex mx-10 pb-8 border-b border-black col gap-5">
-                        <img src={relaxOut} className="max-w-64"></img>
+                        <img src={relaxOut} className="size-48"></img>
                         <div className="content-center gap-5">
                             <h4>Name</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lectus, facilisis non f
@@ -45,7 +45,7 @@ ermentum sit amet, ultrices vitae mauris. Maecenas enim augue, pretium ut nibh q
                         </div>
                     </div>
                     <div className = "flex mx-10 py-8 border-b border-black col gap-5">
-                        <img src={relaxOut} className="max-w-64"></img>
+                        <img src={relaxOut} className="size-48"></img>
                         <div className="content-center gap-5">
                             <h4>Name</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lectus, facilisis non f
@@ -53,7 +53,7 @@ ermentum sit amet, ultrices vitae mauris. Maecenas enim augue, pretium ut nibh q
                         </div>
                     </div>
                     <div className = "flex mx-10 py-8 border-b border-black col gap-5">
-                        <img src={relaxOut} className="max-w-64"></img>
+                        <img src={relaxOut} className="size-48"></img>
                         <div className="content-center gap-5">
                             <h4>Name</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lectus, facilisis non f
@@ -61,7 +61,7 @@ ermentum sit amet, ultrices vitae mauris. Maecenas enim augue, pretium ut nibh q
                         </div>
                     </div>
                     <div className = "flex mx-10 py-8 border-b border-black col gap-5">
-                        <img src={relaxOut} className="max-w-64"></img>
+                        <img src={relaxOut} className="size-48"></img>
                         <div className="content-center gap-5">
                             <h4>Name</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo lectus, facilisis non f
